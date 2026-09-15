@@ -1,0 +1,13 @@
+bin/
+obj/
+.vs/
+.idea/
+*.user
+*.suo
+client/node_modules/
+client/dist/
+hosts/Umbraco17.Host/
+hosts/Umbraco18.Host/
+*.log
+.DS_Store
+Thumbs.db

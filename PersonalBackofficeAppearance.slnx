@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Our.Umbraco.PersonalAppearance.Core/Our.Umbraco.PersonalAppearance.Core.csproj" />
+    <Project Path="src/Our.Umbraco.PersonalAppearance.v17/Our.Umbraco.PersonalAppearance.v17.csproj" />
+    <Project Path="src/Our.Umbraco.PersonalAppearance.v18/Our.Umbraco.PersonalAppearance.v18.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Our.Umbraco.PersonalAppearance.Core.Tests/Our.Umbraco.PersonalAppearance.Core.Tests.csproj" />
+  </Folder>
+</Solution>

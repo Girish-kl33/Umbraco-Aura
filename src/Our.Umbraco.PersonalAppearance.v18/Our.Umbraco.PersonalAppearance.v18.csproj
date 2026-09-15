@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>Our.Umbraco.PersonalAppearance</RootNamespace>
+    <Description>Personal Backoffice Appearance for Umbraco 18 — profile preferences, contrast-safe theming, editor protection.</Description>
+    <Version>0.1.0-umbraco18</Version>
+    <IsPackable>true</IsPackable>
+    <StaticWebAssetBasePath>App_Plugins/Our.Umbraco.PersonalAppearance</StaticWebAssetBasePath>
+    <DefineConstants>$(DefineConstants);UMBRACO_18</DefineConstants>
+    <PackageId>Our.Umbraco.PersonalAppearance.v18</PackageId>
+    <PackageTags>umbraco;umbraco-marketplace;umbraco18;accessibility;appearance</PackageTags>
+    <!-- Required for Microsoft.AspNetCore.OpenApi source generators / interceptors in class libraries -->
+    <InterceptorsNamespaces>$(InterceptorsNamespaces);Microsoft.AspNetCore.OpenApi.Generated</InterceptorsNamespaces>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Umbraco.Cms.Api.Management" Version="18.1.1" />
+    <PackageReference Include="Umbraco.Cms.Web.Common" Version="18.1.1" />
+    <PackageReference Include="Umbraco.Cms.Api.Common" Version="18.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Our.Umbraco.PersonalAppearance.Core\Our.Umbraco.PersonalAppearance.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Our.Umbraco.PersonalAppearance.Shared\**\*.cs" LinkBase="Shared" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>

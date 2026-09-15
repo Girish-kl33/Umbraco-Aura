@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>Our.Umbraco.PersonalAppearance</RootNamespace>
+    <Description>Personal Backoffice Appearance for Umbraco 17 — profile preferences, contrast-safe theming, editor protection.</Description>
+    <Version>0.1.0-umbraco17</Version>
+    <IsPackable>true</IsPackable>
+    <StaticWebAssetBasePath>App_Plugins/Our.Umbraco.PersonalAppearance</StaticWebAssetBasePath>
+    <DefineConstants>$(DefineConstants);UMBRACO_17</DefineConstants>
+    <PackageId>Our.Umbraco.PersonalAppearance.v17</PackageId>
+    <PackageTags>umbraco;umbraco-marketplace;umbraco17;accessibility;appearance</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Umbraco.Cms.Api.Management" Version="17.4.2" />
+    <PackageReference Include="Umbraco.Cms.Web.Common" Version="17.4.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Our.Umbraco.PersonalAppearance.Core\Our.Umbraco.PersonalAppearance.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Our.Umbraco.PersonalAppearance.Shared\**\*.cs" LinkBase="Shared" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>

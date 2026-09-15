@@ -1,0 +1,14 @@
+<Project>
+  <PropertyGroup>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <Authors>Personal Backoffice Appearance</Authors>
+    <Company>Our.Umbraco</Company>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/example/personal-backoffice-appearance</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/example/personal-backoffice-appearance</PackageProjectUrl>
+    <PackageTags>umbraco;backoffice;accessibility;appearance;theme</PackageTags>
+  </PropertyGroup>
+</Project>
