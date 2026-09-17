@@ -5,7 +5,6 @@ on:
 
 permissions:
   contents: read
-  id-token: write
 
 jobs:
   publish:
@@ -32,15 +31,9 @@ jobs:
           dotnet pack src/Our.Umbraco.PersonalAppearance.v17/Our.Umbraco.PersonalAppearance.v17.csproj --configuration Release --no-build --output artifacts
           dotnet pack src/Our.Umbraco.PersonalAppearance.v18/Our.Umbraco.PersonalAppearance.v18.csproj --configuration Release --no-build --output artifacts
 
-      - name: NuGet login (OIDC → temp API key)
-        uses: NuGet/login@v1
-        id: login
-        with:
-          user: ${{ secrets.NUGET_USER }}
-
       - name: Push to NuGet.org
         run: >
           dotnet nuget push artifacts/*.nupkg
-          --api-key ${{ steps.login.outputs.NUGET_API_KEY }}
+          --api-key "${{ secrets.NUGET_API_KEY }}"
           --source https://api.nuget.org/v3/index.json
           --skip-duplicate
