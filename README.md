@@ -1,57 +1,66 @@
 # Umbraco Aura
 
-Personal, server-persisted **Appearance & Accessibility** preferences for Umbraco backoffice users (17 and 18).
+Umbraco Aura lets each backoffice user pick their own look: light, dark, high contrast, and more. Preferences are saved per user and do not change the published website.
 
-## What this package does
+Works with **Umbraco 17** and **Umbraco 18**. Install the package that matches your Umbraco version.
 
-- Extends Umbraco's native **Theme** dropdown with Follow System, Standard Light/Dark,
-  Kids Light/Dark, Teens Light/Dark, Dimmed, Eye Comfort, Black & White,
-  Colour Vision Support, High Contrast, and a personal custom theme
-- Adds a top-level **Appearance Studio** section for building and validating a custom palette
-- Persists preferences with Umbraco's native `IUserDataService` (no core user-schema changes, no custom table in v1)
-- Themes verified shell surfaces (navigation, labels, headings, helper text, external borders)
-- Leaves protected editors native (textboxes, RTE, code editors, previews, media, website output)
-- Validates colors with the **WCAG relative-luminance** contrast formula
-- Ships **separate NuGet packages per major** — do not treat a single version range as cross-major proof
+## Install
 
-## Tested compatibility (explicit)
-
-| Target | Package | Status |
-|--------|---------|--------|
-| Umbraco **17.6.2** | `Umbraco.Aura.v17` | Intended + unit/client tests executed in this repo |
-| Umbraco **18.1.1** | `Umbraco.Aura.v18` | Intended + unit/client tests executed in this repo |
-
-Full host integration (login, multi-user isolation, visual regression) requires the example hosts under `hosts/` — see [docs/VERIFICATION-REPORT.md](docs/VERIFICATION-REPORT.md).
-
-## Quick start
+**Umbraco 17** (17.4.2 or later):
 
 ```bash
-# Client
-cd client && npm install && npm run build && npm test
-
-# .NET
-dotnet test PersonalBackofficeAppearance.sln
-dotnet build src/Our.Umbraco.PersonalAppearance.v17
-dotnet build src/Our.Umbraco.PersonalAppearance.v18
+dotnet add package Umbraco.Aura.v17 --version 0.1.1-umbraco17
 ```
 
-Install the package matching your Umbraco major into a site. Use the existing Theme
-dropdown to select a mode, or open **Appearance** in the top navigation to build a
-personal custom theme.
+**Umbraco 18**:
 
-## Documentation
+```bash
+dotnet add package Umbraco.Aura.v18 --version 0.1.1-umbraco18
+```
 
-- [Architecture decisions](docs/ARCHITECTURE.md)
-- [Support / capability matrix](docs/CAPABILITY-MATRIX.md)
-- [Prioritized backlog](docs/BACKLOG.md)
-- [Schema & API contracts](docs/API-CONTRACTS.md)
-- [Installation / upgrade / recovery](docs/INSTALLATION.md)
+Restart the site, then log in to the backoffice.
+
+Use only one package. Do not install both.
+
+## How to use
+
+1. Open the backoffice and log in.
+2. Open the **Theme** dropdown in your user profile and choose a look, or go to **Appearance** in the main navigation.
+3. Try a preset, or open **Appearance Studio** to build a custom palette.
+4. Use **Preview** to try it, **Save for me** to keep it, or **Reset** to go back to the Umbraco default.
+
+Your choice is saved for you only. Other editors keep their own settings.
+
+### Themes you can pick
+
+Follow System, Standard Light, Standard Dark, Kids Light/Dark, Teens Light/Dark, Dimmed, Eye Comfort, Black & White, Colour Vision Support, High Contrast, and a personal custom theme.
+
+## What it changes — and what it does not
+
+Aura restyles backoffice chrome such as navigation, labels, and headings.
+
+It does **not** restyle:
+
+- text boxes, the rich text editor, or code editors
+- content previews, media, or the live website
+
+That is intentional, so editing stays clear and familiar.
+
+## Upgrade from Umbraco 17 to 18
+
+1. Remove `Umbraco.Aura.v17`
+2. Add `Umbraco.Aura.v18`
+3. Restart the site
+
+Saved preferences carry over. You do not need to set them again.
+
+## If something looks wrong
+
+- Custom colours feel unusable → use **Reset to Umbraco default**
+- Preview looks stuck → click **Cancel** or reload the page
+
+## More detail
+
+- [Installation, upgrade, and recovery](docs/INSTALLATION.md)
 - [Known limitations](docs/LIMITATIONS.md)
-- [Verification report](docs/VERIFICATION-REPORT.md)
-
-## Non-goals / claims we do not make
-
-- No personality or medical-condition inference
-- No medical eye-protection claims
-- No universal color-blindness-correction claims
-- Native Dark theme alone is **not** treated as editor isolation
+- [Architecture](docs/ARCHITECTURE.md)
