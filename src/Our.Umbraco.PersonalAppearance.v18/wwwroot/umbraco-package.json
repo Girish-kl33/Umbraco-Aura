@@ -1,11 +1,11 @@
 {
-  "name": "Our.Umbraco.PersonalAppearance",
-  "version": "0.1.0",
+  "name": "Umbraco Aura",
+  "version": "0.1.1",
   "extensions": [
     {
       "type": "backofficeEntryPoint",
       "alias": "Our.Umbraco.PersonalAppearance.EntryPoint",
-      "name": "Personal Appearance Entry Point",
+      "name": "Umbraco Aura Entry Point",
       "js": "/App_Plugins/Our.Umbraco.PersonalAppearance/our-personal-appearance.js"
     }
   ]

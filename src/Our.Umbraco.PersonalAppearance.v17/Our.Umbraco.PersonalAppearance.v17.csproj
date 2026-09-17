@@ -3,13 +3,14 @@
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <RootNamespace>Our.Umbraco.PersonalAppearance</RootNamespace>
-    <Description>Personal Backoffice Appearance for Umbraco 17 — profile preferences, contrast-safe theming, editor protection.</Description>
-    <Version>0.1.0-umbraco17</Version>
+    <PackageId>Umbraco.Aura.v17</PackageId>
+    <Version>0.1.1-umbraco17</Version>
+    <Title>Umbraco Aura (Umbraco 17)</Title>
+    <Description>Umbraco Aura for Umbraco 17 — profile preferences, contrast-safe theming, editor protection.</Description>
     <IsPackable>true</IsPackable>
     <StaticWebAssetBasePath>App_Plugins/Our.Umbraco.PersonalAppearance</StaticWebAssetBasePath>
     <DefineConstants>$(DefineConstants);UMBRACO_17</DefineConstants>
-    <PackageId>Our.Umbraco.PersonalAppearance.v17</PackageId>
-    <PackageTags>umbraco;umbraco-marketplace;umbraco17;accessibility;appearance</PackageTags>
+    <PackageTags>umbraco;umbraco-marketplace</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

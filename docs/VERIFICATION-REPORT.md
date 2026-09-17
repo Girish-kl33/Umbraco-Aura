@@ -17,11 +17,11 @@ This report does **not** claim full host-verified compatibility from a NuGet ran
 
 | Artifact | Result |
 |----------|--------|
-| `Our.Umbraco.PersonalAppearance.Core` (net10.0) | Succeeded |
-| `Our.Umbraco.PersonalAppearance.v17` against Umbraco packages 17.6.2 | Succeeded |
-| `Our.Umbraco.PersonalAppearance.v17` against Umbraco packages 17.4.2 (declared floor) | Succeeded |
+| `Umbraco.Aura.Core` (net10.0) | Succeeded |
+| `Umbraco.Aura.v17` against Umbraco packages 17.6.2 | Succeeded |
+| `Umbraco.Aura.v17` against Umbraco packages 17.4.2 (declared floor) | Succeeded |
 | `umbraco17test` host solution with v17 project reference (alternate unlocked output) | Succeeded |
-| `Our.Umbraco.PersonalAppearance.v18` against Umbraco packages 18.1.1 | Succeeded |
+| `Umbraco.Aura.v18` against Umbraco packages 18.1.1 | Succeeded |
 | Client bundle `our-personal-appearance.js` (Vite/Lit) | Succeeded (copied into both package `wwwroot` folders) |
 
 ## Executed automated tests

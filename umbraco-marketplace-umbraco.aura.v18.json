@@ -1,0 +1,38 @@
+{
+  "$schema": "https://marketplace.umbraco.com/umbraco-marketplace-schema.json",
+  "Title": "Umbraco Aura",
+  "Description": "Personal, server-persisted appearance and accessibility preferences for Umbraco backoffice users. Install this package on Umbraco 18 sites.",
+  "Category": "Editor Tools",
+  "PackageType": "Package",
+  "LicenseTypes": [ "Free" ],
+  "AuthorDetails": {
+    "Name": "Girish S and Phases",
+    "Url": "https://github.com/Girish-kl33",
+    "ImageUrl": "https://github.com/Girish-kl33.png",
+    "Contributors": [
+      {
+        "Name": "Girish S",
+        "Url": "https://github.com/Girish-kl33"
+      },
+      {
+        "Name": "Phases"
+      }
+    ]
+  },
+  "DocumentationUrl": "https://github.com/Girish-kl33/Umbraco-Aura/blob/main/docs/INSTALLATION.md",
+  "IssueTrackerUrl": "https://github.com/Girish-kl33/Umbraco-Aura/issues",
+  "Tags": [
+    "umbraco",
+    "umbraco-marketplace"
+  ],
+  "VersionSpecificPackageIds": [
+    {
+      "UmbracoMajorVersion": 17,
+      "PackageId": "Umbraco.Aura.v17"
+    },
+    {
+      "UmbracoMajorVersion": 18,
+      "PackageId": "Umbraco.Aura.v18"
+    }
+  ]
+}

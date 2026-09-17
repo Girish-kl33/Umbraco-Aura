@@ -3,7 +3,7 @@
 ## Install (Umbraco 17)
 
 ```bash
-dotnet add package Our.Umbraco.PersonalAppearance.v17 --version 0.1.0-umbraco17
+dotnet add package Umbraco.Aura.v17 --version 0.1.1-umbraco17
 ```
 
 Or project reference the `src/Our.Umbraco.PersonalAppearance.v17` project from a 17.x site.
@@ -21,17 +21,17 @@ Restart the site, log in, open the user profile → **Appearance & Accessibility
 ## Install (Umbraco 18)
 
 ```bash
-dotnet add package Our.Umbraco.PersonalAppearance.v18 --version 0.1.0-umbraco18
+dotnet add package Umbraco.Aura.v18 --version 0.1.1-umbraco18
 ```
 
 Umbraco 18 registers a dedicated OpenAPI document via `AddBackOfficeOpenApiDocument("our-personal-appearance")`.
 
 ## Upgrade 17 → 18
 
-1. Remove `Our.Umbraco.PersonalAppearance.v17`
-2. Add `Our.Umbraco.PersonalAppearance.v18`
+1. Remove `Umbraco.Aura.v17`
+2. Add `Umbraco.Aura.v18`
 3. Preference JSON in `IUserDataService` is major-agnostic (`schemaVersion: 1`) and should round-trip unchanged
-4. Re-verify OpenAPI UI lists **Personal Appearance API**
+4. Re-verify OpenAPI UI lists **Umbraco Aura API**
 5. Confirm protected editors remain native under Dark / Custom
 
 Do **not** rely on a single floating NuGet range spanning 17–18.

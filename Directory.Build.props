@@ -3,12 +3,14 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <LangVersion>latest</LangVersion>
-    <Authors>Personal Backoffice Appearance</Authors>
-    <Company>Our.Umbraco</Company>
+    <Title>Umbraco Aura</Title>
+    <Authors>Girish S;Phases</Authors>
+    <Company>Umbraco Aura</Company>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/example/personal-backoffice-appearance</RepositoryUrl>
-    <PackageProjectUrl>https://github.com/example/personal-backoffice-appearance</PackageProjectUrl>
-    <PackageTags>umbraco;backoffice;accessibility;appearance;theme</PackageTags>
+    <RepositoryUrl>https://github.com/Girish-kl33/Umbraco-Aura</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/Girish-kl33/Umbraco-Aura</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>umbraco</PackageTags>
   </PropertyGroup>
 </Project>

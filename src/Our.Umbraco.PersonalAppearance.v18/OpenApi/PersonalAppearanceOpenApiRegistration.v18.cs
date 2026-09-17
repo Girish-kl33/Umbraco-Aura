@@ -15,7 +15,7 @@ internal static partial class PersonalAppearanceOpenApiRegistration
         builder.AddBackOfficeOpenApiDocument(
             PersonalAppearanceApiConstants.ApiName,
             document => document
-                .WithTitle("Personal Appearance API")
+                .WithTitle("Umbraco Aura API")
                 .WithBackOfficeAuthentication());
     }
 }

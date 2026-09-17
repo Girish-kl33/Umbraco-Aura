@@ -4,8 +4,8 @@ These hosts are the intended integration targets for **tested** compatibility:
 
 | Host folder | Umbraco | Package project |
 |-------------|---------|-----------------|
-| `Umbraco17.Host` | 17.6.2 | `Our.Umbraco.PersonalAppearance.v17` |
-| `Umbraco18.Host` | 18.1.1 | `Our.Umbraco.PersonalAppearance.v18` |
+| `Umbraco17.Host` | 17.6.2 | `Umbraco.Aura.v17` |
+| `Umbraco18.Host` | 18.1.1 | `Umbraco.Aura.v18` |
 
 ## Create a host (one-time)
 

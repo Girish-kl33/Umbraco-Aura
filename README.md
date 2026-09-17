@@ -1,4 +1,4 @@
-# Personal Backoffice Appearance
+# Umbraco Aura
 
 Personal, server-persisted **Appearance & Accessibility** preferences for Umbraco backoffice users (17 and 18).
 
@@ -18,8 +18,8 @@ Personal, server-persisted **Appearance & Accessibility** preferences for Umbrac
 
 | Target | Package | Status |
 |--------|---------|--------|
-| Umbraco **17.6.2** | `Our.Umbraco.PersonalAppearance.v17` | Intended + unit/client tests executed in this repo |
-| Umbraco **18.1.1** | `Our.Umbraco.PersonalAppearance.v18` | Intended + unit/client tests executed in this repo |
+| Umbraco **17.6.2** | `Umbraco.Aura.v17` | Intended + unit/client tests executed in this repo |
+| Umbraco **18.1.1** | `Umbraco.Aura.v18` | Intended + unit/client tests executed in this repo |
 
 Full host integration (login, multi-user isolation, visual regression) requires the example hosts under `hosts/` — see [docs/VERIFICATION-REPORT.md](docs/VERIFICATION-REPORT.md).
 

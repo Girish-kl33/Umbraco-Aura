@@ -3,13 +3,14 @@
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <RootNamespace>Our.Umbraco.PersonalAppearance</RootNamespace>
-    <Description>Personal Backoffice Appearance for Umbraco 18 — profile preferences, contrast-safe theming, editor protection.</Description>
-    <Version>0.1.0-umbraco18</Version>
+    <PackageId>Umbraco.Aura.v18</PackageId>
+    <Version>0.1.1-umbraco18</Version>
+    <Title>Umbraco Aura (Umbraco 18)</Title>
+    <Description>Umbraco Aura for Umbraco 18 — profile preferences, contrast-safe theming, editor protection.</Description>
     <IsPackable>true</IsPackable>
     <StaticWebAssetBasePath>App_Plugins/Our.Umbraco.PersonalAppearance</StaticWebAssetBasePath>
     <DefineConstants>$(DefineConstants);UMBRACO_18</DefineConstants>
-    <PackageId>Our.Umbraco.PersonalAppearance.v18</PackageId>
-    <PackageTags>umbraco;umbraco-marketplace;umbraco18;accessibility;appearance</PackageTags>
+    <PackageTags>umbraco;umbraco-marketplace</PackageTags>
     <!-- Required for Microsoft.AspNetCore.OpenApi source generators / interceptors in class libraries -->
     <InterceptorsNamespaces>$(InterceptorsNamespaces);Microsoft.AspNetCore.OpenApi.Generated</InterceptorsNamespaces>
   </PropertyGroup>

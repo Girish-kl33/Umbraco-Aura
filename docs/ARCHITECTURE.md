@@ -2,7 +2,7 @@
 
 ## ADR-001 — Separate packages per Umbraco major
 
-**Decision:** Ship `Our.Umbraco.PersonalAppearance.v17` and `.v18` that share Core + Shared sources.
+**Decision:** Ship `Umbraco.Aura.v17` and `Umbraco.Aura.v18` that share Core + Shared sources.
 
 **Why:** Umbraco 18 replaces Swashbuckle-era OpenAPI registration with `AddBackOfficeOpenApiDocument` / Microsoft.AspNetCore.OpenApi. A single NuGet version range cannot honestly claim cross-major compatibility.
 
